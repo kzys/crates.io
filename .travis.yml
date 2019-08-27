@@ -72,8 +72,7 @@ matrix:
       services:
         - docker
       before_install:
-        - docker build -f frontend.Dockerfile .
-        - docker build -f backend.Dockerfile .
+        - docker-compose up
 
 notifications:
   email:
